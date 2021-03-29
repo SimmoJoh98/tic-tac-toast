@@ -1,13 +1,14 @@
 import './sign-in.styles.css';
 import React, {useState} from 'react';
-import Axios from 'axios';
+import axios from 'axios';
 
 function Auth () {
     const [data, setData] = useState({Username: '', Password:''})
 
    const handleSubmit = () => {
-       console.log(data.Username);
-       console.log(data.Password);
+    //console.log(data.Username);
+    //console.log(data.Password);
+    const res = axios.get('#')
    }
 
     return(
