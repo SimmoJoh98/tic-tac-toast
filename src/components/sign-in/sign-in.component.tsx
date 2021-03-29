@@ -8,7 +8,8 @@ function Auth () {
    const handleSubmit = () => {
     //console.log(data.Username);
     //console.log(data.Password);
-    const res = axios.get('#')
+    let userData = {};
+    const res = axios.get('https://jsonplaceholder.typicode.com/todos/1').then(() => {userData = res});
    }
 
     return(
