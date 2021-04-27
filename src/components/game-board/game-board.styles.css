@@ -1,0 +1,11 @@
+.backboard{
+    background-color: grey;
+    margin-top: 10vh;
+    padding: 25vh;
+    border-radius: 25px;
+}
+
+#s1{
+    position: relative;
+    background-color: red;
+}
