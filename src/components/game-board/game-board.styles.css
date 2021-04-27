@@ -6,6 +6,58 @@
 }
 
 #s1{
-    position: relative;
     background-color: red;
+    position: absolute;
+    margin-left: -35vw;
+    margin-top: -20vh;
+}
+
+#s2{
+    background-color: aqua;
+    position: absolute;
+    margin-top: -20vh;
+}
+
+#s3{
+    background-color: blueviolet;
+    position: absolute;
+    margin-top: -20vh;
+    margin-right: -35vw;
+}
+
+#s4{
+    background-color: chartreuse;
+    position: absolute;
+    margin-left: -35vw;
+}
+
+#s5{
+    background-color: darkmagenta;
+    position: absolute;
+}
+
+#s6{
+    background-color: firebrick;
+    position: absolute;
+    margin-right: -35vw;
+}
+
+#s7{
+    background-color: hotpink;
+    position: absolute;
+    margin-left: -35vw;
+    margin-top: 20vh;
+}
+
+#s8{
+    background-color: darkcyan;
+    position: absolute;
+    margin-top: 20vh;
+}
+
+#s9{
+    background-color: darkolivegreen;
+    position: absolute;
+    margin-top: 20vh;
+    margin-right: -35vw;
 }
