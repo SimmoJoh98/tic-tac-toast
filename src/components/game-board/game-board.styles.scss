@@ -1,0 +1,103 @@
+.backboard{
+    background-color: grey;
+    padding: 25vh;
+    border-radius: 25px;
+    position: relative;
+}
+#s1{
+    background-color: red;
+    position: absolute;
+    margin-left: -66%;
+    margin-top: -40%;
+    
+    &:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+}
+#s2{
+    background-color: aqua;
+    position: absolute;
+    margin-top: -40%;
+
+    &:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+}
+#s3{
+    background-color: blueviolet;
+    position: absolute;
+    margin-top: -40%;
+    margin-right: -66%;
+
+    &:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+}
+#s4{
+    background-color: chartreuse;
+    position: absolute;
+    margin-left: -66%;
+    margin-top: -5%;
+
+    &:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+}
+#s5{
+    background-color: darkmagenta;
+    position: absolute;
+    margin-top: -5%;
+
+    &:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+}
+#s6{
+    background-color: firebrick;
+    position: absolute;
+    margin-right: -66%;
+    margin-top: -5%;
+
+    &:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+}
+#s7{
+    background-color: hotpink;
+    position: absolute;
+    margin-left: -66%;
+    margin-top: 30%;
+
+    &:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+}
+#s8{
+    background-color: darkcyan;
+    position: absolute;
+    margin-top: 30%;
+
+    &:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+}
+#s9{
+    background-color: darkolivegreen;
+    position: absolute;
+    margin-top: 30%;
+    margin-right: -66%;
+    overflow: hidden;
+
+    &:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+}

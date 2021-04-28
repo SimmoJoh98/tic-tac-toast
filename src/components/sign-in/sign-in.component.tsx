@@ -1,4 +1,4 @@
-import './sign-in.styles.css';
+import './sign-in.styles.scss';
 import React, {useState} from 'react';
 import axios from 'axios';
 
@@ -11,7 +11,6 @@ function Auth () {
     //console.log(data.Password);
 
     let userData = data;
-
    }
 
     return(

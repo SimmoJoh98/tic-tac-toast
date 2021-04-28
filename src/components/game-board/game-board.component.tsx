@@ -1,4 +1,4 @@
-import './game-board.styles.css';
+import './game-board.styles.scss';
 import { useState } from 'react';
 
 function GameBoard(){
