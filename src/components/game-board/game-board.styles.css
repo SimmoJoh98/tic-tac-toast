@@ -1,13 +1,13 @@
 .backboard{
     background-color: grey;
-    margin-top: 10vh;
     padding: 25vh;
     border-radius: 25px;
+    position: relative;
 }
 #s1{
     background-color: red;
     position: absolute;
-    margin-left: -35vw;
+    margin-left: -66%;
     margin-top: -20vh;
 }
 #s2{
@@ -19,12 +19,12 @@
     background-color: blueviolet;
     position: absolute;
     margin-top: -20vh;
-    margin-right: -35vw;
+    margin-right: -66%;
 }
 #s4{
     background-color: chartreuse;
     position: absolute;
-    margin-left: -35vw;
+    margin-left: -66%;
     margin-top: -2vh;
 }
 #s5{
@@ -35,13 +35,13 @@
 #s6{
     background-color: firebrick;
     position: absolute;
-    margin-right: -35vw;
+    margin-right: -66%;
     margin-top: -2vh;
 }
 #s7{
     background-color: hotpink;
     position: absolute;
-    margin-left: -35vw;
+    margin-left: -66%;
     margin-top: 15vh;
 }
 #s8{
@@ -53,5 +53,6 @@
     background-color: darkolivegreen;
     position: absolute;
     margin-top: 15vh;
-    margin-right: -35vw;
+    margin-right: -66%;
+    overflow: hidden;
 }
