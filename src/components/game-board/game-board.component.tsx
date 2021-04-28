@@ -6,6 +6,8 @@ function GameBoard(){
         //[1,2,3]
         //[4,5,6]
         //[7,8,9]
+         player1: 1,
+         player2: 2,
          slot1: 0,
          slot2: 0,
          slot3: 0,
