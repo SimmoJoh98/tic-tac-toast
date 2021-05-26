@@ -2,7 +2,10 @@
     background-color: #cf8b4c;
     padding: 25vh;
     border-radius: 25px;
-    position: relative;
+    position: absolute;
+}
+.gameboard{
+    position: absolute;
 }
 #s1{
     background-color: red;
@@ -121,4 +124,6 @@
 }
 #turn{
     background-color: aqua;
+    position: relative;
+    margin-top: -10%;
 }

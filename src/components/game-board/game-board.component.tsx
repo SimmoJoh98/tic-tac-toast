@@ -22,13 +22,13 @@ function GameBoard(){
     })
     
     function handleUserInput () { 
-
+      
     }
 
     return (
         <div className='gameboard'>
             <div className='backboard'>
-                <div id='s1'>{state.slot1}</div>
+                <div onClick={handleUserInput} id='s1'>{state.slot1}</div>
                 <div id='s2'>{state.slot2}</div>
                 <div id='s3'>{state.slot3}</div>
                 <div id='s4'>{state.slot4}</div>
@@ -38,7 +38,7 @@ function GameBoard(){
                 <div id='s8'>{state.slot8}</div>
                 <div id='s9'>{state.slot9}</div>
             </div>
-            <h1 id='turn'>{state.playerTurn}</h1>
+            <h1 id='turn'>It's player {state.playerTurn}'s turn</h1>
         </div>
     )
 }
