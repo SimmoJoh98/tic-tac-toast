@@ -1,12 +1,17 @@
 import './sign-in.styles.scss';
 import React, {useState} from 'react';
-import axios from 'axios';
+import Axios from 'axios';
+import { useHistory } from 'react-router-dom';
 
 function Auth () {
     const [data, setData] = useState({Username: '', Password:''})
-    
+    let history = useHistory();
+
+
    const handleSubmit = () => {
-    
+    if(data.Username && data.Password !== undefined){
+        history.push('/game-page')
+    }
    }
 
     return(

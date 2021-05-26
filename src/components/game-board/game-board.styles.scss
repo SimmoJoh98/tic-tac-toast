@@ -1,5 +1,5 @@
 .backboard{
-    background-color: grey;
+    background-color: #cf8b4c;
     padding: 25vh;
     border-radius: 25px;
     position: relative;
@@ -8,7 +8,9 @@
     background-color: red;
     position: absolute;
     margin-left: -66%;
-    margin-top: -40%;
+    margin-top: -42%;
+    border-radius: 10%;
+    padding: 9%;
     
     &:hover{
         background-color: white;
@@ -18,7 +20,9 @@
 #s2{
     background-color: aqua;
     position: absolute;
-    margin-top: -40%;
+    margin-top: -42%;
+    border-radius: 10%;
+    padding: 9%;
 
     &:hover{
         background-color: white;
@@ -28,8 +32,10 @@
 #s3{
     background-color: blueviolet;
     position: absolute;
-    margin-top: -40%;
+    margin-top: -42%;
     margin-right: -66%;
+    border-radius: 10%;
+    padding: 9%;
 
     &:hover{
         background-color: white;
@@ -40,7 +46,9 @@
     background-color: chartreuse;
     position: absolute;
     margin-left: -66%;
-    margin-top: -5%;
+    margin-top: -7%;
+    border-radius: 10%;
+    padding: 9%;
 
     &:hover{
         background-color: white;
@@ -50,7 +58,9 @@
 #s5{
     background-color: darkmagenta;
     position: absolute;
-    margin-top: -5%;
+    margin-top: -7%;
+    border-radius: 10%;
+    padding: 9%;
 
     &:hover{
         background-color: white;
@@ -61,7 +71,9 @@
     background-color: firebrick;
     position: absolute;
     margin-right: -66%;
-    margin-top: -5%;
+    margin-top: -7%;
+    border-radius: 10%;
+    padding: 9%;
 
     &:hover{
         background-color: white;
@@ -72,7 +84,9 @@
     background-color: hotpink;
     position: absolute;
     margin-left: -66%;
-    margin-top: 30%;
+    margin-top: 26%;
+    border-radius: 10%;
+    padding: 9%;
 
     &:hover{
         background-color: white;
@@ -82,7 +96,9 @@
 #s8{
     background-color: darkcyan;
     position: absolute;
-    margin-top: 30%;
+    margin-top: 26%;
+    border-radius: 10%;
+    padding: 9%;
 
     &:hover{
         background-color: white;
@@ -92,9 +108,11 @@
 #s9{
     background-color: darkolivegreen;
     position: absolute;
-    margin-top: 30%;
+    margin-top: 26%;
     margin-right: -66%;
     overflow: hidden;
+    border-radius: 10%;
+    padding: 9%;
 
     &:hover{
         background-color: white;
