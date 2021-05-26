@@ -22,6 +22,7 @@ function GameBoard(){
     })
     
     function handleUserInput () { 
+      //console.log('Clicked!');
       
     }
 
