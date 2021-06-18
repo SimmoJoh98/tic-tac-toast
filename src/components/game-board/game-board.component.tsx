@@ -10,15 +10,10 @@ function GameBoard(){
          playerTurn: 1,
          player1: 1,
          player2: 2,
-         slot1: 0,
-         slot2: 0,
-         slot3: 0,
-         slot4: 0,
-         slot5: 0,
-         slot6: 0,
-         slot7: 0,
-         slot8: 0,
-         slot9: 0
+         grid: [0,0,0,0,0,0,0,0,0],
+         winConditions:[
+             []
+         ]
     })
     
     function handleUserInput () { 
@@ -29,15 +24,15 @@ function GameBoard(){
     return (
         <div className='gameboard'>
             <div className='backboard'>
-                <div onClick={handleUserInput} id='s1'>{state.slot1}</div>
-                <div id='s2'>{state.slot2}</div>
-                <div id='s3'>{state.slot3}</div>
-                <div id='s4'>{state.slot4}</div>
-                <div id='s5'>{state.slot5}</div>
-                <div id='s6'>{state.slot6}</div>
-                <div id='s7'>{state.slot7}</div>
-                <div id='s8'>{state.slot8}</div>
-                <div id='s9'>{state.slot9}</div>
+                <div onClick={handleUserInput} id='s1'>{state.grid[0]}</div>
+                <div id='s2'>{state.grid[1]}</div>
+                <div id='s3'>{state.grid[2]}</div>
+                <div id='s4'>{state.grid[3]}</div>
+                <div id='s5'>{state.grid[4]}</div>
+                <div id='s6'>{state.grid[5]}</div>
+                <div id='s7'>{state.grid[6]}</div>
+                <div id='s8'>{state.grid[7]}</div>
+                <div id='s9'>{state.grid[8]}</div>
             </div>
             <h1 id='turn'>It's player {state.playerTurn}'s turn</h1>
         </div>
