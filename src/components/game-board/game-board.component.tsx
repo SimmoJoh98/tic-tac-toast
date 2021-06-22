@@ -13,21 +13,27 @@ function GameBoard(){
          grid: [0,0,0,0,0,0,0,0,0]
     })
     
-   
+    const Cell = ({gridIndex}) => {
+        const handleUserInput = () => {
+            console.log(`Clicked ${gridIndex}`)
+        }
+        return <div id={gridIndex} onClick = {handleUserInput}>{state.grid[gridIndex]}</div>
+    }
+    
 
     return (
         <div className="background">
             <div className='gameboard'>
                 <div className='backboard'>
-                    <div onClick={} id='s1'>{state.grid[0]}</div>
-                    <div onClick={} id='s2'>{state.grid[1]}</div>
-                    <div onClick={} id='s3'>{state.grid[2]}</div>
-                    <div onClick={} id='s4'>{state.grid[3]}</div>
-                    <div onClick={} id='s5'>{state.grid[4]}</div>
-                    <div onClick={} id='s6'>{state.grid[5]}</div>
-                    <div onClick={} id='s7'>{state.grid[6]}</div>
-                    <div onClick={} id='s8'>{state.grid[7]}</div>
-                    <div onClick={} id='s9'>{state.grid[8]}</div>
+                    <Cell gridIndex={0}/>
+                    <Cell gridIndex={1}/>
+                    <Cell gridIndex={2}/>
+                    <Cell gridIndex={3}/>
+                    <Cell gridIndex={4}/>
+                    <Cell gridIndex={5}/>
+                    <Cell gridIndex={6}/>
+                    <Cell gridIndex={7}/>
+                    <Cell gridIndex={8}/>
                 </div>
                 <h1 id='turn'>It's player {state.playerTurn}'s turn</h1>
             </div>
