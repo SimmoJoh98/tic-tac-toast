@@ -1,11 +1,22 @@
 body{
     background-color: rgb(75, 75, 75);
 }
+td{
+    width: 33.3%;
+
+    &:after{
+        content: "";
+        display: block;
+        margin-top: 100%;
+    }
+}
+table{
+    width: 50vw;
+    border-radius: 10px;
+}
 .backboard{
     background-color: #cf8b4c;
-    padding: 25vh;
-    border-radius: 25px;
-    position: absolute;
+    
 }
 .gameboard{
     position: absolute;
@@ -146,17 +157,21 @@ body{
 }
 */
 
-cell{
-    background-color: mediumslateblue;
-    font-weight: bold;
-    position: relative;
-    padding: 9%;
-}
-
 #turn{
-    background-color: #cf8b4c;
-    position: relative;
+    background-color: grey;
+    position: absolute;
     margin-top: -10%;
     border-radius: 10%;
     padding: 1%;
+}
+
+.box{
+    display: grid;
+    background-color: #cf8b4c;
+    border-radius: 5px;
+    padding: 10%;
+    &:hover{
+        background-color: #bb7d44;
+        cursor: pointer;
+    }
 }

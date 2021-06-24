@@ -26,24 +26,31 @@ function GameBoard(){
                 setState({...state, playerTurn: state.playerTurn === 1 ? 2 : 1})
             }
         }
-        return <div onClick = {handleUserInput}>{boardState[gridIndex]}</div>
+        return <div className="box" onClick = {handleUserInput}>{boardState[gridIndex]}</div>
     }
     
 
     return (
         <div className="background">
             <div className='gameboard'>
-                <div className='backboard'>
-                    <Cell gridIndex={0}/>
-                    <Cell gridIndex={1}/>
-                    <Cell gridIndex={2}/>
-                    <Cell gridIndex={3}/>
-                    <Cell gridIndex={4}/>
-                    <Cell gridIndex={5}/>
-                    <Cell gridIndex={6}/>
-                    <Cell gridIndex={7}/>
-                    <Cell gridIndex={8}/>
-                </div>
+                <table className='backboard'>
+                    <tr id="row1">
+                        <td><Cell gridIndex={0}/></td>
+                        <td><Cell gridIndex={1}/></td>
+                        <td><Cell gridIndex={2}/></td>
+                    </tr>
+                    <tr id="row2">
+                        <td><Cell gridIndex={3}/></td>
+                        <td><Cell gridIndex={4}/></td>
+                        <td><Cell gridIndex={5}/></td>
+                    </tr>
+                    <tr id="row3">
+                        <td><Cell gridIndex={6}/></td>
+                        <td><Cell gridIndex={7}/></td>
+                        <td><Cell gridIndex={8}/></td>
+                    </tr>
+                </table>
+
                 <h1 id='turn'>It's player {state.playerTurn}'s turn</h1>
             </div>
         </div>
