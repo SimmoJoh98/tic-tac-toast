@@ -23,6 +23,7 @@ function GameBoard(){
                 let board = Array.from(boardState)
                 board[gridIndex] = state.playerTurn
                 setBoardState(board)
+                setState({...state, playerTurn: state.playerTurn === 1 ? 2 : 1})
             }
         }
         return <div onClick = {handleUserInput}>{boardState[gridIndex]}</div>
