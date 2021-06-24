@@ -1,5 +1,5 @@
 import './game-board.styles.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import React from 'react';
 
 function GameBoard(){
@@ -10,14 +10,22 @@ function GameBoard(){
          playerTurn: 1,
          player1: 1,
          player2: 2,
-         grid: [0,0,0,0,0,0,0,0,0]
     })
     
+    const [boardState, setBoardState] = useState(
+        [0,0,0,0,0,0,0,0,0]
+    )
+
     const Cell = ({gridIndex}) => {
         const handleUserInput = () => {
-            console.log(`Clicked ${gridIndex}`)
+            //console.log(`Clicked ${gridIndex}`)
+            if(boardState[gridIndex] === 0){
+                let board = Array.from(boardState)
+                board[gridIndex] = state.playerTurn
+                setBoardState(board)
+            }
         }
-        return <div id={gridIndex} onClick = {handleUserInput}>{state.grid[gridIndex]}</div>
+        return <div onClick = {handleUserInput}>{boardState[gridIndex]}</div>
     }
     
 

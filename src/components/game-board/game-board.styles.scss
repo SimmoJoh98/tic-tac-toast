@@ -10,6 +10,7 @@ body{
 .gameboard{
     position: absolute;
 }
+/* Old CSS 
 #s1{
     background-color: red;
     font-weight: bold;
@@ -143,8 +144,19 @@ body{
         cursor: pointer;
     }
 }
+*/
+
+cell{
+    background-color: mediumslateblue;
+    font-weight: bold;
+    position: relative;
+    padding: 9%;
+}
+
 #turn{
-    background-color: aqua;
+    background-color: #cf8b4c;
     position: relative;
     margin-top: -10%;
+    border-radius: 10%;
+    padding: 1%;
 }
