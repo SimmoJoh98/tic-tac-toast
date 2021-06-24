@@ -12,11 +12,12 @@ td{
 }
 table{
     width: 50vw;
+    height: 50vh;
     border-radius: 10px;
 }
 .backboard{
     background-color: #cf8b4c;
-    
+    position: relative;
 }
 .gameboard{
     position: absolute;
@@ -169,7 +170,8 @@ table{
     display: grid;
     background-color: #cf8b4c;
     border-radius: 5px;
-    padding: 10%;
+    padding: 100px;
+    margin-bottom: -100%;
     &:hover{
         background-color: #bb7d44;
         cursor: pointer;
