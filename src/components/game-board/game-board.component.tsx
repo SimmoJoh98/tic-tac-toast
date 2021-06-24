@@ -1,5 +1,5 @@
 import './game-board.styles.scss';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import React from 'react';
 
 function GameBoard(){
@@ -20,12 +20,13 @@ function GameBoard(){
     )
     
     for(let i=0; i<state.winCons.length; i++){
-        let winRow = state.winCons[i];
-        let s1 = winRow[0];
-        let s2 = winRow[1];
-        let s3 = winRow[2];
+        let winLine = state.winCons[i];
+        let s1 = winLine[0];
+        let s2 = winLine[1];
+        let s3 = winLine[2];
         if(boardState[s1] !== 0 && boardState[s1] === boardState[s2] && boardState[s2] === boardState[s3]){
             alert(`Player ${boardState[s1]} wins!`)
+            break;
         }
     }
 
