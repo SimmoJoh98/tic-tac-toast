@@ -10,21 +10,37 @@ function GameBoard(){
          playerTurn: 1,
          player1: 1,
          player2: 2,
+         winCons: [
+             [0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]
+         ]
     })
     
     const [boardState, setBoardState] = useState(
         [0,0,0,0,0,0,0,0,0]
     )
+    
+    for(let i=0; i<state.winCons.length; i++){
+        let winRow = state.winCons[i];
+        let s1 = winRow[0];
+        let s2 = winRow[1];
+        let s3 = winRow[2];
+        if(boardState[s1] !== 0 && boardState[s1] === boardState[s2] && boardState[s2] === boardState[s3]){
+            alert(`Player ${boardState[s1]} wins!`)
+        }
+    }
 
     const Cell = ({gridIndex}) => {
         const handleUserInput = () => {
             //console.log(`Clicked ${gridIndex}`)
+
             if(boardState[gridIndex] === 0){
                 let board = Array.from(boardState)
-                board[gridIndex] = state.playerTurn
-                setBoardState(board)
+                board[gridIndex] = state.playerTurn;
+                setBoardState(board);
                 setState({...state, playerTurn: state.playerTurn === 1 ? 2 : 1})
             }
+
+            
         }
         return <div className="box" onClick = {handleUserInput}>{boardState[gridIndex]}</div>
     }
