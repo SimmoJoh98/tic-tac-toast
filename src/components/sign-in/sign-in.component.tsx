@@ -16,8 +16,8 @@ function Auth () {
 
     return(
         <div>
-            <input placeholder='Username' type='text' value={data.Username} onChange={e => setData({ ...data, Username: e.target.value})} />
-            <input placeholder='Password' type='text' value={data.Password} onChange={e => setData({ ...data, Password: e.target.value})} />
+            <input className="Username" placeholder='Username' type='text' value={data.Username} onChange={e => setData({ ...data, Username: e.target.value})} />
+            <input className="Password" placeholder='Password' type='text' value={data.Password} onChange={e => setData({ ...data, Password: e.target.value})} />
             <button onClick={handleSubmit} type="submit">Sign In</button>
         </div>
     )
