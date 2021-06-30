@@ -1,7 +1,6 @@
 import './game-board.styles.scss';
 import { useState } from 'react';
 import React from 'react';
-import { textChangeRangeIsUnchanged } from 'typescript';
 
 function GameBoard(){
     const [state, setState] = useState({
