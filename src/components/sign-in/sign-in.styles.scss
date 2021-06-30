@@ -5,3 +5,29 @@ div {
     justify-content: center;
     padding-top: 5vh;
 }
+Input{
+    border-radius: 5px;
+    border: hidden;
+    outline: none;
+    &:focus-within{
+        background-color: lightblue;
+        border: hidden;
+    }
+    &:focus{
+        border: hidden;
+    }
+}
+
+#SignIn{
+    border-radius: 5px;
+    border: hidden;
+
+    &:hover{
+        background-color: lightblue;
+        border: hidden;
+    }
+}
+.Username{
+
+    
+}
