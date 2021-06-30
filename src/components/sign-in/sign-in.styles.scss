@@ -4,6 +4,7 @@ div {
     display: flex;
     justify-content: center;
     padding-top: 5vh;
+    
 }
 Input{
     border-radius: 5px;
@@ -21,7 +22,7 @@ Input{
 #SignIn{
     border-radius: 5px;
     border: hidden;
-
+    
     &:hover{
         background-color: lightblue;
         border: hidden;
