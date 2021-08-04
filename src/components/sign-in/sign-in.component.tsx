@@ -10,7 +10,7 @@ function Auth () {
 
    const handleSubmit = () => {
     if(data.Username && data.Password !== undefined){
-        history.push('/game-page')
+        history.push('/lobby-page')
     }
    }
 
