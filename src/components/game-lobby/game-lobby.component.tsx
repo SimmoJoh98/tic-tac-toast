@@ -6,7 +6,7 @@ function LobbyList(){
 
     const [state, setState] = useState({
         Users: [],
-        gameAmount: 0,
+        pendingGames: 0,
     });
 
     

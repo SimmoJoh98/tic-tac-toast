@@ -2,15 +2,23 @@ import './sign-in.styles.scss';
 import React, {useState} from 'react';
 import Axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import axios from 'axios';
 
 function Auth () {
     const [data, setData] = useState({Username: '', Password:''})
     let history = useHistory();
-
+    let url = 'http://localhost:3001/SignIn';
 
    const handleSubmit = () => {
     if(data.Username && data.Password !== undefined){
-        history.push('/lobby-page')
+        axios.post(url, {
+            Username: data.Username,
+            Password: data.Password
+        }
+        )
+    }
+    else{
+        alert('Fields Cannot Be Blank!')
     }
    }
 
