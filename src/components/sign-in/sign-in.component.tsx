@@ -1,6 +1,5 @@
 import './sign-in.styles.scss';
 import React, {useState} from 'react';
-import Axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
@@ -14,7 +13,8 @@ function Auth () {
         axios.post(url, {
             Username: data.Username,
             Password: data.Password
-        }
+        }).then(
+            
         )
     }
     else{
